@@ -1,23 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;600;700;800&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;600;700;800&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-:root{
-  --red-color:#a12c2f;
-  --orange-color:#f5a425;
+:root {
+  --red-color: #a12c2f;
+  --orange-color: #f5a425;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
+.about_education {
+  max-width: 1250px;
+  height: 250px;
+  margin: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  position: relative;
+  transform: translateY(-50%);
+}
 
+.about_education > article {
+  background-image: url(https://templatemo.com/templates/templatemo_569_edu_meeting/assets/images/service-item-bg.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  flex-grow: 1;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_education > article > img {
+  margin: auto;
+}
+
+.about_education > article > h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.about_education > article > p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 45px;
+  width: 90%;
+  line-height: 25px;
+}
 
 @media only screen and (max-width: 800px) {
-
 }
 
-@media only screen and (max-width: 1200px){
-  
+@media only screen and (max-width: 1200px) {
 }
