@@ -12,6 +12,34 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.warning{
+  width: 100%;
+  background-color: #212529;
+  padding: 10px 0;
+}
+
+.warning_wrapper{
+  max-width: 1250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  border: 1px solid red;
+  color: white;
+}
+
+.warning_wrapper > h4{
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.links{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
 
 
 @media only screen and (max-width: 800px) {
