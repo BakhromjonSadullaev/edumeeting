@@ -39,6 +39,15 @@
   margin-right: 1rem;
 }
 
+.links > i{
+  font-size: 20px;
+  transition: 0.4s ease;
+}
+
+.links > i:hover{
+  color: var(--orange-color);
+}
+
 nav{
   backdrop-filter: blur(3px);
   height: 10vh;
@@ -67,7 +76,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   font-weight: 700;
   list-style-type: none;
   cursor: pointer; 
@@ -84,6 +93,10 @@ nav{
 
 .dropdown{
   position: relative;
+}
+
+.dropdown > li{
+  font-size: 14px;
 }
 
 .dropdown_list{
@@ -167,6 +180,7 @@ header > article{
   border-radius: 30px;
   margin: 2rem 0;
   font-weight: 700;
+cursor: pointer;
 }
 
 
