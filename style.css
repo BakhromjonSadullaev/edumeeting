@@ -30,6 +30,7 @@
   gap: 2rem;
   position: relative;
   transform: translateY(-50%);
+  z-index: 3;
 }
 
 .about_education > article {
@@ -47,6 +48,8 @@
 
 .about_education > article > img {
   margin: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .about_education > article > h2 {
@@ -202,6 +205,11 @@
   .meetings_container {
     grid-template-columns: auto;
     justify-content: center;
+  }
+
+  .about_education {
+    margin: 0 1rem 3rem;
+    transform: translateY(1rem);
   }
 }
 
