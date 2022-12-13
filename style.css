@@ -1,30 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;600;700;800&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;600;700;800&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-:root{
-  --red-color:#a12c2f;
-  --orange-color:#f5a425;
+:root {
+  --red-color: #a12c2f;
+  --orange-color: #f5a425;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-body{
-  position: relative;
-}
-
-.warning{
+.warning {
   width: 100%;
   background-color: #212529;
   padding: 10px 1rem;
-  position: absolute;
-  z-index: 1000;
+  position: fixed;
+  top: 0;
+  z-index: 99;
 }
 
-.warning_wrapper{
+.warning_wrapper {
   max-width: 1250px;
   display: flex;
   align-items: center;
@@ -33,37 +30,43 @@ body{
   color: white;
 }
 
-.warning_wrapper > h4{
+.warning_wrapper > h4 {
   font-weight: 400;
   font-size: 14px;
 }
 
-.links{
+.links {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-right: 1rem;
 }
 
-.links > i{
+.links > i {
   font-size: 20px;
   transition: 0.4s ease;
 }
 
-.links > i:hover{
+.links > i:hover {
   color: var(--orange-color);
 }
 
-nav{
+header {
+  height: 100vh;
+  position: relative;
+}
+
+nav {
   backdrop-filter: blur(3px);
-  height: 15vh;
+  height: 10vh;
   position: fixed;
+  top: 2.5rem;
   width: 100%;
   z-index: 99;
   background-color: rgba(255, 255, 255, 0.196);
 }
 
-.navbar{
+.navbar {
   color: white;
   max-width: 1250px;
   display: flex;
@@ -74,43 +77,38 @@ nav{
   padding: 1rem 1rem;
 }
 
-.menu{
+.menu {
   display: none;
 }
 
-.navbar > h1{
-  margin-top: 1.5rem;
-}
-
-.navbar > ul{
+.navbar > ul {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  margin-top: 1.5rem;
   font-weight: 700;
   list-style-type: none;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
-.navbar > ul > li{
+.navbar > ul > li {
   font-size: 14px;
   transition: 0.5s ease;
 }
 
-.navbar > ul > li:hover{
+.navbar > ul > li:hover {
   color: var(--orange-color);
 }
 
-.dropdown{
+.dropdown {
   position: relative;
 }
 
-.dropdown > li{
+.dropdown > li {
   font-size: 14px;
 }
 
-.dropdown_list{
+.dropdown_list {
   position: absolute;
   background-color: rgba(128, 128, 128, 0.729);
   white-space: nowrap;
@@ -121,7 +119,7 @@ nav{
   visibility: hidden;
 }
 
-.dropdown_list > p{
+.dropdown_list > p {
   padding: 10px 15px;
   font-size: 14px;
   font-weight: 400;
@@ -129,23 +127,17 @@ nav{
   transition: 0.5s ease;
 }
 
-.dropdown:hover .dropdown_list{
+.dropdown:hover .dropdown_list {
   transform: translateY(-5px);
   visibility: visible;
 }
 
-.dropdown_list> p:hover{
+.dropdown_list > p:hover {
   transform: translateX(10px);
   color: var(--orange-color);
 }
 
-
-header{
-  height: 100vh;
-  position: relative;
-}
-
-header > video{
+header > video {
   position: absolute;
   z-index: 1;
   object-fit: cover;
@@ -153,7 +145,7 @@ header > video{
   height: 100%;
 }
 
-header > article{
+header > article {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.411);
   width: 100%;
@@ -165,25 +157,25 @@ header > article{
   align-items: center;
 }
 
-.header_info{
+.header_info {
   width: 1250px;
   float: right;
   color: white;
 }
 
-.header_info > h1{
+.header_info > h1 {
   font-size: 40px;
   font-weight: 800;
   margin: 1rem 0;
 }
 
-.header_info > p{
+.header_info > p {
   font-size: 14px;
   font-weight: 600;
   line-height: 25px;
 }
 
-.header_info > button{
+.header_info > button {
   padding: 13px 25px;
   background-color: var(--red-color);
   color: white;
@@ -194,32 +186,32 @@ header > article{
   cursor: pointer;
 }
 
+.test_section {
+  height: 100vh;
+}
+
 @media only screen and (max-width: 1200px) {
- 
 }
 
 @media only screen and (max-width: 800px) {
-
-  .warning_wrapper > h4{
+  .warning_wrapper > h4 {
     display: none;
   }
 
-  .links{
+  .links {
     margin: auto;
   }
 
-  .navbar > ul{
+  .navbar > ul {
     display: none;
   }
 
-  .menu{
+  .menu {
     display: block;
-    margin-top: 1.5rem;
     font-size: 32px;
   }
 
-  .header_info{
+  .header_info {
     margin-top: 5rem;
   }
-  
 }
