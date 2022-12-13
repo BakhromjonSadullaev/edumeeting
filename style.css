@@ -209,7 +209,7 @@
 }
 
 .contact_section {
-  padding: 6rem 1rem;
+  padding: 8rem 1rem;
   background-image: url(https://templatemo.com/templates/templatemo_569_edu_meeting/assets/images/meetings-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -240,7 +240,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.footer_line {
+.form_line {
   max-width: 100%;
   margin: 1rem 0 2rem;
   background-color: rgba(0, 0, 0, 0.1);
@@ -311,6 +311,22 @@ input[type="submit"]:hover {
   margin: 30px 0;
 }
 
+footer {
+  padding: 3rem 1rem;
+  background-image: url(https://templatemo.com/templates/templatemo_569_edu_meeting/assets/images/meetings-bg.jpg);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+  color: white;
+  position: relative;
+  background-attachment: fixed;
+}
+
+footer > p {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
 @media only screen and (max-width: 1200px) {
   .meetings_container {
     grid-template-columns: auto;
@@ -321,6 +337,10 @@ input[type="submit"]:hover {
     margin: 0 1rem 3rem;
     transform: translateY(1rem);
   }
+
+  .main_contact_section {
+    grid-template-columns: auto;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -330,5 +350,17 @@ input[type="submit"]:hover {
 
   .meetings_article_container {
     grid-template-columns: auto;
+  }
+
+  .form {
+    padding: 2rem 1rem;
+  }
+
+  .form > form {
+    grid-template-columns: auto;
+  }
+
+  .form > form > textarea {
+    grid-column: 1/2;
   }
 }
