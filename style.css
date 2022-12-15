@@ -186,10 +186,6 @@ header > article {
   cursor: pointer;
 }
 
-.test_section {
-  height: 100vh;
-}
-
 @media only screen and (max-width: 1200px) {
 }
 
