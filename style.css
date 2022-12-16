@@ -12,9 +12,74 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.about_section{
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(https://templatemo.com/templates/templatemo_569_edu_meeting/assets/images/apply-bg.jpg);
+}
 
+.for_img{
+  max-width: 1350px;
+  height: 100vh;
+  margin: 3rem auto;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
 
-@media only screen and (max-width: 800px) {
+.bacherlor_main{
+  margin: 2rem 0;
+}
+
+.bachelor_div{
+  width: 600px;
+  padding: 2rem;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+.bachelor_div h2{
+  margin: 10px 0;
+  font-size: 22px;
+  font-weight: 750;
+}
+
+.bachelor_div p{
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.bachelor_div button{
+  margin: 10px 0;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: var(--red-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.accordion{
+  width: 650px; 
+}
+
+.accordion-item{
+  padding: 0 2rem;
+}
+
+.accordion-item h2 button{
+  font-weight: 600;
+}
+
+.accordion-body{
+  font-weight: 500;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 800px){
 
 }
 
