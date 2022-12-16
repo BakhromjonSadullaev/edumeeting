@@ -121,7 +121,7 @@ nav {
   visibility: hidden;
 }
 
-.dropdown > li:hover{
+.dropdown > li:hover {
   color: var(--orange-color);
 }
 
@@ -193,25 +193,25 @@ header > article {
   cursor: pointer;
 }
 
-.popular_courses_section{
+.popular_courses_section {
   background-image: url(https://templatemo.com/templates/templatemo_569_edu_meeting/assets/images/meetings-bg.jpg);
   background-position: center;
   padding: 5rem 1rem;
   background-attachment: fixed;
 }
 
-.courses_content{
+.courses_content {
   max-width: 1250px;
   margin: auto;
 }
 
-.courses_line{
+.courses_line {
   background-color: rgba(255, 255, 255, 0.15);
   margin: 1.5rem 0 2.5rem;
   height: 1px;
 }
 
-.courses_article{
+.courses_article {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -219,17 +219,23 @@ header > article {
   flex-wrap: wrap;
 }
 
-.courses_article > article{
+.courses_article > article {
   background-color: white;
   width: 300px;
+  overflow: hidden;
 }
 
-.courses_article > article > img{
+.courses_article > article > img {
   width: 100%;
   height: auto;
+  transition: 0.5s ease;
 }
 
-.info > p{
+.courses_article > article > img:hover {
+  transform: scale(1.1);
+}
+
+.info > p {
   margin-top: 1rem;
   text-align: center;
   padding: 0 1rem;
@@ -237,24 +243,24 @@ header > article {
   font-size: 17px;
 }
 
-.line_article{
+.line_article {
   max-width: 100%;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.15);
   height: 1px;
   margin: 1.5rem 0;
 }
 
-.rating{
+.rating {
   display: flex;
   justify-content: space-between;
   padding: 0 1rem 1.5rem;
 }
 
-.rate{
+.rate {
   color: goldenrod;
 }
 
-.rating > p{
+.rating > p {
   font-weight: 600;
   color: var(--red-color);
 }
